@@ -771,6 +771,7 @@ public class PropertyManager {
       System.out.println("                   trimmed-down target property file. Environment corresponds to the comma-separated");
       System.out.println("                   tags after the #env tags.");
       System.exit(-2);
+      // This is from the iMac.
     }
     
     private static void processEnvironments(final String sourceProps, final String targetProps, final String environment) throws IOException {
@@ -783,7 +784,7 @@ public class PropertyManager {
       // depth is the count of how many #env tags we've seen
       // envDepth incremented every time we see an #env, decremented when we see
       // a #vne
-      int envDepth = 0;
+      int envDepth = 1;
       // includeDepth incremented every time we see an #env that matches our
       // environment, decremented when we see a #vne if the depth is > 0
       int includeDepth = 0;

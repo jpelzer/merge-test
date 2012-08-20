@@ -39,9 +39,10 @@ import java.util.StringTokenizer;
  * database, with little or no code modifications on dependent classes.
  */
 public class PropertyManager {
+  // This is something added from the Air...
   private static java.util.logging.Logger logger            = java.util.logging.Logger.getLogger(PropertyManager.class.getName());
   private static String                   hostname          = "UNKNOWN";
-  static final String                     KEY_BUILD_NUMBER  = "build.number";
+  static final String                     KEY_BUILD_NUMBER  = "build.number.foo";
   
   private static PropertyManager          singletonInstance = null;
   
